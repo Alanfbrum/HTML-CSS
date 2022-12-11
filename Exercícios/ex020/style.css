@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* Seletores personalizados
+   o que em HTML é id, em CSS é #
+   só podemos ter 1 elemento com o mesmo id no documento
+   o que em HTML é Class, em CSS é .
+   Usamos Class para selecionar mais de 1 elemento, ou seja, uma classe
+*/   
+
+body {
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #1e402f;
+}
+
+#principal {
+    text-align: center;
+    background-color: #3c805e;
+    color: white;
+}
+
+h2 {
+    color: #3c805e;
+}
+
+p {
+    text-align: justify;
+}
+
+.basico {
+    color: green;
+    font-weight: bold;
+}
+
+.inter {
+    color: gold;
+    font-weight: bolder;
+}
+
+.avanc {
+    color: red;
+}
+
+.destaque {
+    font-weight: bolder;
+}
