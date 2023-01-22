@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos\style.css">
+    <link rel="stylesheet" href="estilos\mediaquery.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Menu Responsivo com Media Query</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -41,6 +42,16 @@
         </article>
     </main>
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                materias.style.display = 'block'
+            } else {
+                materias.style.display = 'none'
+            }
+        }
+    
+
         function clickMenu(){
             if (materias.style.display == 'block') {
                 materias.style.display = 'none'
